@@ -1,11 +1,6 @@
-import Head from "next/head";
-import Image from "next/image";
-import {Inter} from "next/font/google";
-import styles from "@/styles/Home.module.css";
 
-
-export default function Home() {
+export default function Home({title = 'HOME PAGE'}) {
     return (
-        <div> index</div>
+        <div> HOME PAGE </div>
     );
 }
