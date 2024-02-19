@@ -9,7 +9,7 @@ export const Layout = ({children, title = 'VIDEOS'}) => {
 
     const routerConfig = {
         my: {
-            videos: "/my/videos",
+            posts: "/my/posts",
             myVid: "/my/[vid]"
         }
     }
@@ -28,8 +28,8 @@ export const Layout = ({children, title = 'VIDEOS'}) => {
             <nav>
                 <Link href="/">Main</Link>
                 <Link href="/videos">Videos</Link>
-                <Link href={routerConfig.my.videos}>My videos</Link>
-                <Link href={{pathname: routerConfig.my.myVid, query: {vid}}}>My videos by ID</Link>
+                <Link href={routerConfig.my.posts}>My posts</Link>
+                <Link href={{pathname: "/my/[vid]", query: {vid}}}>My videos by ID</Link>
 
                 <button onClick={() => router.push('/videos')}>go to videos</button>
 
